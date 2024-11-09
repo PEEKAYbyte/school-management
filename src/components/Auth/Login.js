@@ -10,7 +10,7 @@ export default function Login() {
         e.preventDefault();
 
         try {
-            const response = await axios.post("https://jsonplaceholder.typicode.com/users",{
+            const response = await axios.post('http://localhost:5000/api/login',{
                 username,
                 password,
             });
